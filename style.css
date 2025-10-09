@@ -160,6 +160,14 @@ li {
   }
 }
 
+@keyframes typing {
+  from { 
+      width: 0; 
+  }
+  to { 
+      width: calc(var(--char-count) * 1.0em); 
+  }
+}
 
 @keyframes blink-cursor {
   from { 
@@ -182,7 +190,7 @@ li {
 }
 
 
-@media (max-width: 425px) {
+@media (max-width: 800px) {
   #lentes {
     height: 100dvh;
   }
