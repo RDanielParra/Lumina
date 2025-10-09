@@ -148,6 +148,18 @@ li {
   font-family: PTSerif;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .texto_caracteristicas{
+    font-weight: bold;
+    font-size: 2rem;
+  }
+}
+
 @keyframes typing {
   from { 
       width: 0; 
@@ -179,6 +191,10 @@ li {
 
 
 @media (max-width: 425px) {
+  #lentes {
+    height: 100dvh;
+  }
+
   .images_container {
     flex-direction: column;
     justify-content: space-evenly;
@@ -196,6 +212,40 @@ li {
   main{
     img {
       width: 300px;
+    }
+  }
+
+  #caracteristicas_lentes{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    height: max-content;
+    text-align: center;
+    font-size: .9rem;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      width: 200px;
+    }
+
+    div {
+      border-bottom: 1px solid black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+
+    ul {
+      list-style: none;
+      width: 100vw;
+    }
+
+    .texto_caracteristicas {
+      font-size: 1.5rem;
     }
   }
 }
