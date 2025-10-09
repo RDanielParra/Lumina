@@ -101,7 +101,7 @@ a {
   font-weight: bold;
   white-space: nowrap;
   overflow: hidden;
-  width: 0;
+  width: max-content;
   border-right: 3px solid var(--cursor-color);
   animation:       typing var(--typing-speed) steps(var(--char-count), end) forwards,            blink-cursor var(--cursor-blink-speed) step-end       calc(var(--typing-speed) / var(--cursor-blink-speed)) forwards;
   -webkit-animation:       typing var(--typing-speed) steps(var(--char-count), end) forwards,            blink-cursor var(--cursor-blink-speed) step-end       calc(var(--typing-speed) / var(--cursor-blink-speed)) forwards;
@@ -160,14 +160,6 @@ li {
   }
 }
 
-@keyframes typing {
-  from { 
-      width: 0; 
-  }
-  to { 
-      width: calc(var(--char-count) * 1.0em); 
-  }
-}
 
 @keyframes blink-cursor {
   from { 
