@@ -160,6 +160,85 @@ li {
   }
 }
 
+#certificaciones {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 30px;
+}
+
+.certificaciones {
+  background-color: white;
+  width: 100vw;
+  flex-direction: row;
+  justify-content: space-evenly;
+  img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+  }
+}
+
+#quienes_somos {
+  color: white;
+  h2 {
+    font-size: 50px;
+    margin: 50px;
+    font-family: PTSerif;
+  }
+  p, li {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+}
+
+.quienes {
+  display: grid;
+  grid: 'mision vision'
+  'valores valores';
+
+  h3 {
+    font-family: Arvo;
+    font-size: 30px;
+    margin: 10px
+  }
+}
+
+.mision {
+  grid-area: mision;
+  padding: 30px;
+  margin: 30px;
+}
+
+.vision {
+  grid-area: vision;
+  padding: 30px;
+  margin: 30px;
+}
+
+.valores {
+  grid-area: valores;
+  padding: 30px;
+  margin: 30px;
+}
+
+.footer {
+  padding: 30px;
+  font-family: Arvo;
+  color: white;
+  width: 100vw;
+  background-color: var(--color_1);
+}
+
+.contactos {
+  margin: 40px;
+  width: 100vw;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+
 @keyframes typing {
   from { 
       width: 0; 
