@@ -327,4 +327,55 @@ li {
       font-size: 1.5rem;
     }
   }
+
+  #certificaciones {
+    img {
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  #certificaciones{
+    padding: 0;
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+
+  #quienes_somos {
+    h2 {
+      text-align: center;
+    }
+  }
+
+  .quienes {
+    grid: 'mision'
+    'vision'
+    'valores';
+
+    .mision {
+      text-align: center;
+    }
+
+    .vision {
+      text-align: center;
+    }
+
+    .valores {
+      text-align: center;
+      ol {
+        list-style: none;
+
+        li {
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+
+
+  .contactos {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 2rem;
+  }
 }
